@@ -7,26 +7,24 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/apple_logo"
-        android:layout_width="265dp"
-        android:layout_height="316dp"
-        android:layout_marginTop="188dp"
+        android:id="@+id/dog"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/apple_logo_black_svg" />
+        app:srcCompat="@drawable/bichon_frise_labrador_retriever_cat_kitten_animal_16_animal_models_flat" />
 
-    <TextView
-        android:id="@+id/apple_text"
-        android:layout_width="242dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="serif"
-        android:gravity="center"
-        android:text="Apple Inc"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apple_logo" />
+    <ImageView
+        android:id="@+id/monkey"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/dog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monkey" />
 </androidx.constraintlayout.widget.ConstraintLayout>

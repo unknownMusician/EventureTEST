@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    tools:ignore="MissingDefaultResource">
 
     <!-- Use your working translate animation here-->
     <translate
