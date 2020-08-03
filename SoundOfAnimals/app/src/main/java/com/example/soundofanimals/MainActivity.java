@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 dog.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.up_down_anim));
-                mp = MediaPlayer.create(MainActivity.this,R.raw.dog);
-                mp.start();
+                MediaPlayer.create(MainActivity.this,R.raw.dog).start();
             }
         });
         monkey.setOnClickListener(new View.OnClickListener() {
