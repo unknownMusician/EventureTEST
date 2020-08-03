@@ -3,7 +3,9 @@ package com.example.soundofanimals;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.Image;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -23,5 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
         textView.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.alpha_anim));
         logo.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.logo_anim));
+
+        final MediaPlayer mp = MediaPlayer.create(this,R.raw.sample);
+
+        logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logo.startAnimation(AnimationUtils.loadAnimation(getApplicationContext(),R.anim.logo_anim));
+                mp.start();
+            }
+        });
     }
 }
