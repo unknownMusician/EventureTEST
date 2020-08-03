@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/animals_fragment"
+            android:icon="@drawable/animals"
+            android:title="animals" />
+        <item
+            android:id="@+id/alphabet_fragment"
+            android:icon="@drawable/alphabet"
+            android:title="alphabet" />
+    </group>
+</menu>
